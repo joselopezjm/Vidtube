@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vidtube</title>
+
+
+    <link rel="icon" type="image/x-icon" href="Resources/ico.png" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!--    top header-->
+    <div id="top-header">
+        <div id="left-menu">
+            <div id="img-menu">
+                <img src="Resources/menu_1.png" id="icon-menu" style="height:13px; width:13px">
+            </div>
+            <img src="Resources/icon.png" style="height:35px; width:40;position:absolute;left:7%;top:1%;" id="logo-vidtube">
+        </div>
+        <div id="center-search">
+            <div id="button-search">
+                <img src="Resources/search.png" id="img-search" style="height:16px; width:16px">
+            </div>
+            <input id="input-search" style="height:28px; width:495px" />
+        </div>
+        <div id="right-log">
+            <div id="button-upload">Upload</div>
+            <div id="button-login">Login</div>
+            <div id="button-signup">Sign up</div>
+
+            <div id="img-profile" style="display:none">
+                <img src="Resources/profile.png" id="icon-profile">
+                <div id="name-profile"></div>
+            </div>
+        </div>
+    </div>
+    <!--    end top header-->
+
+
+
+    <!--    content-->
+
+    <div id="content">
+        <!--            menu profile-->
+        <div id="menu-profile">
+            <div id=box-profile>
+                <div id="img-menu-profile">
+                    <img src="Resources/profile.png" id="ico-menu-profile">
+                    <div id="name-profile-box">JOSE LOPEZ</div>
+                    <div id="email-profile-box">joselopezjm12@hotmail.com</div>
+                </div>
+
+                <div id="button-logout">Log out</div>
+                <div id="button-edit">Edit</div>
+            </div>
+            <!--
+                <div id=box-edit>
+                    <div id="img-profile" style="display:none">
+                        <img src="Resources/profile.png" id="icon-profile">
+                        <div id="name-profile"></div>
+                        </div>
+                        <div id="button-logout">Log out</div>
+                        <div id="button-edit">Edit</div>
+                    </div>
+-->
+
+
+
+        </div>
+        <!--            end menu profile-->
+        <!-- dropmenu-->
+        <div id="dropmenu">
+            <div id="menu-home">Home
+                <img src="Resources/home.png" id="icon-home" style="height:14px; width:14px">
+            </div>
+            <div id="menu-trending">Trending Videos
+                <img src="Resources/trending.png" id="icon-trending" style="height:15px; width:15px">
+            </div>
+            <div id="division"></div>
+            <div id="home-subtitle">BEST OF VIDTUBE</div>
+            <div id="menu-music">Music
+                <img src="Resources/music.png" id="icon-music" style="height:20px; width:20px">
+            </div>
+            <div id="menu-sports">Sports
+                <img src="Resources/sports.png" id="icon-sports" style="height:20px; width:20px">
+            </div>
+            <div id="menu-games">Gaming
+                <img src="Resources/games.png" id="icon-games" style="height:20px; width:20px">
+            </div>
+            <div id="menu-news">News
+                <img src="Resources/news.png" id="icon-news" style="height:20px; width:20px">
+            </div>
+            <div id="menu-movies">Movies
+                <img src="Resources/movies.jpg" id="icon-movies" style="height:20px; width:20px">
+            </div>
+            <div id="division2"></div>
+        </div>
+        <!--    end dropmenu-->
+        <div id="upper-bar"></div>
+        <!--        home-->
+
+        <div id="home-box">
+            <div id="home-content">
+                <img id="img-logerror" src="Resources/error.png" style="width:100%; height:100%; position:absolute; left:0%">
+                <div id="img-logerror-button"></div>
+                <div id="home-videos"></div>
+                <div id="trending-videos"></div>
+                <div id="search-videos"></div>
+                <div id="video-player">
+                    <video id="video" controls autoplay></video>
+                    <div id="recom-panel">
+                    </div>
+                    <div id="info-video">
+                        <div id="name-video"></div>
+                        <div id="name-user">
+
+                            <img id="img-uservideo" src="Resources/profile.png" style="width:30px; height:30px;">
+                            <div id="name1-user"></div>
+                        </div>
+                        <div id="views-video"></div>
+                        <div id="division-video"></div>
+                        <div id="date-video"></div>
+                        <div id="like-video">
+                            <div id="like-count"></div>
+                            <img id="img-likevideo" src="Resources/like.png" style="width:24px; height:24px;">
+                        </div>
+                        <div id="desc-video"></div>
+                    </div>
+                    <div id="comments-video">
+                        <div id="title-comments">Comments • 0</div>
+                        <div id="comment-box">
+                            <div id="profile-comment">
+                                <img id="img-profile-comment" src="Resources/profile.png">
+                            </div>
+                            <textarea id="input-comment"></textarea>
+                            <div id="button-post">Post</div>
+                            <div id="division-box-comment"></div>
+                        </div>
+                        <div id=comment-box2></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--        end home-->
+    </div>
+    <!--    end content-->
+
+    <!--    sign up modal-->
+    <div id="form-signup">
+        <div id="box">
+            <div id="signup-header">
+                <p id="textp" style="top:4%;left:35%; color:white;">Sign Up</p>
+                <img src="Resources/icon.png" style="height:40px; width:45;position:absolute;left:10%;top:2%;">
+                <img src="Resources/close.png" class="close">
+            </div>
+            <div id="inputs-signup">
+                &nbsp&nbsp Username
+                <input id="signup-username" class="modal-input" style="left: 30px;" /><img src="Resources/wrong.png" id="signup-username-icon" class="check-icon">
+                <br> &nbsp&nbsp Password
+                <input id="signup-password" type="password" class="modal-input" style="left: 34px;" />
+                <img src="Resources/wrong.png" id="signup-password-icon" class="check-icon">
+                <br> &nbsp&nbsp Email&nbsp &nbsp &nbsp&nbsp&nbsp
+                <input id="signup-email" class="modal-input" style="left: 33px;" />&nbsp<img src="Resources/wrong.png" id="signup-email-icon" class="check-icon">
+                <br> &nbsp&nbsp Name&nbsp &nbsp &nbsp &nbsp
+                <input id="signup-name" class="modal-input" style="left: 30px;" />&nbsp<img src="Resources/wrong.png" id="signup-name-icon" class="check-icon">
+                <br> &nbsp&nbsp&nbsp Lastname
+                <input id="signup-lastname" class="modal-input" style="left: 32px;" />&nbsp<img src="Resources/wrong.png" id="signup-lastname-icon" class="check-icon">
+                <br> &nbsp&nbsp Birthday &nbsp&nbsp
+                <input id="signup-birthday" type="date" class="modal-input" style="left: 35px;" />&nbsp
+                <img src="Resources/wrong.png" id="signup-birthday-icon" class="check-icon">
+                <br>
+            </div>
+            <div id="button-submit">Submit</div>
+        </div>
+    </div>
+    <!--    end sign up modal-->
+
+    <!--    login modal-->
+    <div id="form-login">
+        <div id="box2">
+            <div id="login-header">
+                <p id="textp" style="top:4%;left:35%; color:white;">Sign in</p>
+                <img src="Resources/icon.png" style="height:40px; width:45;position:absolute;left:10%;top:2%;">
+                <img src="Resources/close.png" class="close">
+            </div>
+            <div id="inputs-login">
+                &nbsp&nbsp Username
+                <input id="login-username" class="modal-input" style="left: 30px;" /><img src="Resources/wrong.png" id="login-username-icon" class="check-icon">
+                <br> &nbsp&nbsp Password
+                <input id="login-password" type="password" class="modal-input" style="left: 34px;" />
+                <div id="error-login">
+                    The username and password you entered don't match.
+                    <img src="Resources/wrong.png" id="login-password-icon" class="check-icon">
+                </div>
+
+            </div>
+            <div id="button-submit2">Submit</div>
+        </div>
+    </div>
+    <!--    end login modal-->
+
+    <!--    upload modal-->
+    <div id="form-upload">
+        <div id="box3">
+            <div id="upload-header">
+                <p id="textp" style="top:4%;left:35%; color:white;">Upload</p>
+                <img src="Resources/icon.png" style="height:40px; width:45;position:absolute;left:10%;top:2%;">
+                <img src="Resources/close.png" class="close">
+            </div>
+            <div id="inputs-upload">
+                &nbsp&nbsp Name
+                <input id="upload-name" class="modal-input" style="left: 30px;" /><img src="Resources/wrong.png" id="upload-username-icon" class="check-icon">
+                <br> &nbsp&nbsp Categoria&nbsp
+                <select id="upload-category" class="modal-input">
+                    <option value="1">Music</option>
+                    <option value="2">Sports</option>
+                    <option value="3">Gaming</option>
+                    <option value="4">News</option>
+                    <option value="5">Movies</option>
+                </select>
+                <br> &nbsp&nbsp Description
+                <textarea cols="80" id="upload-description" type="password"></textarea>
+                <img src="Resources/wrong.png" id="upload-password-icon" class="check-icon">
+                <br>
+                <div id="upload-video">Video file</div>
+                <input type="file" id="upload-file" />
+            </div>
+            <video id="preview" autoplay style="display:none"></video>
+            <canvas id="myCanvas" style="display:none"></canvas>
+            <div id="error-upload">
+                Complete all the fields.
+            </div>
+
+            <div id="button-submit3">Upload</div>
+        </div>
+    </div>
+    <!--    end upload modal-->
+    <script>
+    </script>
+    <script src="js/buttons_index.js"></script>
+    <script src="js/XHR.js"></script>
+    <script src="js/signup.js"></script>
+    <script src="js/signin.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/set_videos.js"></script>
+    <script src="js/search-video.js"></script>
+</body>
+
+</html>

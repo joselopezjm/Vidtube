@@ -1,0 +1,10 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/joselopez/Documents/workspace/Vidtube_server/WebContent/js/buttons_index.js",
+        "/Users/joselopez/Documents/workspace/Vidtube_server/WebContent/js/signup.js",
+        "/Users/joselopez/Documents/workspace/Vidtube_server/WebContent/js/logout.js",
+        "/Users/joselopez/Documents/workspace/Vidtube_server/WebContent/js/upload.js",
+        "/Users/joselopez/Documents/workspace/Vidtube_server/WebContent/js/signin.js",
+        "/Users/joselopez/Documents/workspace/Vidtube_server/WebContent/js/search-video.js"
+    ]
+}
